@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "serve": "set PORT=4433 && serve dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -11,11 +12,13 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",
+    "https-localhost": "^4.7.1",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-pwa": "file:",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "vite-plugin-pwa": "^1.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
